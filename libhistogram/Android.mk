@@ -23,7 +23,7 @@ LOCAL_SHARED_LIBRARIES := libdrm liblog libcutils libutils libbase
 LOCAL_C_INCLUDES          := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include/ \
                              -isystem external/libdrm
 LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
-LOCAL_CFLAGS := -DLOG_TAG=\"SDM-histogram\" -Wall -std=c++14 -Werror -fno-operator-names \
+LOCAL_CFLAGS := -DLOG_TAG=\"SDM-histogram\" -Wall -Werror -fno-operator-names \
 	-Wthread-safety
 LOCAL_CLANG  := true
 LOCAL_SRC_FILES := histogram_collector.cpp ringbuffer.cpp
@@ -40,7 +40,7 @@ LOCAL_SHARED_LIBRARIES := libhistogram libdrm liblog libcutils libutils libbase
 LOCAL_C_INCLUDES          := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include/ \
                              -isystem external/libdrm
 LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
-LOCAL_CFLAGS := -DLOG_TAG=\"SDM-histogram\" -Wall -std=c++14 -Werror -fno-operator-names \
+LOCAL_CFLAGS := -DLOG_TAG=\"SDM-histogram\" -Wall -Werror -fno-operator-names \
 	-Wthread-safety
 LOCAL_CLANG  := true
 LOCAL_MODULE_TAGS := optional
@@ -58,7 +58,7 @@ LOCAL_SHARED_LIBRARIES := libhistogram libdrm liblog libcutils libutils libbase
 LOCAL_C_INCLUDES          := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include/ \
                              -isystem external/libdrm
 LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
-LOCAL_CFLAGS := -DLOG_TAG=\"SDM-histogram\" -Wall -std=c++14 -Werror -fno-operator-names \
+LOCAL_CFLAGS := -DLOG_TAG=\"SDM-histogram\" -Wall -Werror -fno-operator-names \
 	-Wthread-safety
 LOCAL_CLANG  := true
 LOCAL_MODULE_TAGS := optional
